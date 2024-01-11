@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCC Registration System</title>
+    <link rel="stylesheet" href="c.css" />
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .success-message {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>NCC Registration System</h1>
+      <div class="NCC-Logo">
+        <a href="./index.html">
+          <img src="NCC Logo.png" alt="NCC Logo" id="NCC-Logo" class="" />
+        </a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="registration-form">
+        <h2 style="color: rgb(244, 196, 74)">Register for NCC Activities</h2>
+        <form action="#" method="post">
+            <h4 style="color:rgb(244, 196, 74)">*required field should not be empty</h4>
+          <h4 style="color: rgb(244, 196, 74)">
+            <p>Name:* <input type="C" name="Name" id="Name" required /></p>
+          </h4>
+          <h4 style="color: rgb(244, 196, 74)">
+        <p> Gender:*
+                <select name="Gender:*" id="Gender:*" required>
+                    <option value="">--Select Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    </select>
+                    </p>
+          </h4>
+          <h4 style="color: rgb(244, 196, 74)">
+            <p>
+              D.O.B.:* <input type="date"  />
+            </p>
+          </h4>
+          <h4 style="color: rgb(244, 196, 74)">
+            <p>
+              Enrollment No.:*
+              <input
+                type="Enrollment No." name="Enrollment No."id="Enrollment No."required/>
+            </p>
+          </h4>
+          <h4 style="color: rgb(244, 196, 74)">
+            <p>
+              Email:* <input type="email" name="Email" id="Email" required />
+            </p>
+          </h4>
+          <h4 style="color: rgb(244, 196, 74)">
+            <p>
+              Contact No.:*
+              <input
+                type="Contact No."
+                name="Contact No."
+                id="Contact No."
+                required
+              />
+            </p>
+          </h4>
+
+          <label for="address">
+            <h4 style="color: rgb(244, 196, 74)">
+              <p>Address:</p>
+            </h4>
+          </label>
+          <textarea id="address" name="address" rows="4" ></textarea>
+
+          
+            <h3 style="color: rgb(244, 196, 74)">
+              <p>Upload Documents:*</p> </h>
+              <h4 style="color: rgb(244, 196, 74)">
+              <article class="tableRow"><span>1. Passport Size Photograph*</span> <input id="profile_photo" type="file" ></article>
+              <article class="tableRow"><span>2. Cadet Signature*</span> <input id="Cadet Signature*" type="file" ></article>
+              <article class="tableRow"><span>3. 10th Certificate*</span> <input id="profile_photo" type="file" ></article>
+              <article class="tableRow"><span>4. 12th Certificate*</span> <input id="profile_photo" type="file" ></article>
+              <article class="tableRow"><span>5. Consent and Agreements*</span> <input id="profile_photo" type="file" ></article>
+              </h4>
+          
+
+          <h4 style="color: rgb(244, 196, 74)">
+            <p>
+                Select Preferred Training Modules:*
+              <select name="Select Module" id="Select Module" required>
+                <option value="">--Select Preferred Training Modules--</option>
+                <option value="Basic Military Training">Basic Military Training</option>
+                <option value="Camp Training">Camp Training</option>
+                <option value="Weapon Training">Weapon Training</option>
+                <option value=" Attachment Training"> Attachment Training</option>
+                <option value="Leadership Training">Leadership Training</option>
+                <option value="Physical Fitness">Physical Fitness</option>
+                <option value="Youth Exchange Programme">Youth Exchange Programme</option>
+                <option value="Adventure Based Learning">Adventure Based Learning</option>
+                
+              </select>
+            </p>
+        </h4>
+        <button type="button" onclick="submitForm()">Submit Registration</button>
+</form>
+
+<script>
+    function submitForm() {
+        // Perform form submission logic here (e.g., send data to a server)
+
+        // Display success message in a new tab
+        var newTab = window.open('', '_blank');
+        newTab.document.write('<html><head><title>Form Submission</title></head><body>');
+        newTab.document.write('<p class="success-message">Form submitted successfully!</p>');
+        newTab.document.write('</body></html>');
+        newTab.document.close();
+    }
+</script>
+
+         
+        </form>
+        
+</script>
+        <br>
+        <footer>  
+          <a href="$">FAQ</a>
+          <a href="$">Contact Us</a>
+          <a href="$">Terms Of Use</a>
+          <a href="$">Privacy Policy</a>
+          <a href="$">&copy; 2024 | NCC</a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
